@@ -9,7 +9,7 @@ function onGeoOk (position) {
         const location = document.querySelector('.location')
        const weatherIcon = data.weather[0].icon;
        const img = document.createElement("img")
-       img.src = `/src/icons/${weatherIcon}.png`;
+       img.src = `src/icons/${weatherIcon}.png`;
        todayIs.appendChild(img)
       location.innerText = data.name;
     })
