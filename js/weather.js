@@ -17,7 +17,7 @@ function onGeoOk (position) {
 
 }
 function onGeoError() {
-    alert("can't find you")
+    alert("위치 액세스 권한을 허용해주세요")
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError)
