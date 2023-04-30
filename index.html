@@ -8,72 +8,80 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <script src="app.js"></script>
-    <title>Document</title>
+    <script src="/js/login.js" defer></script>
+    <script src="/js/clock.js" defer></script>
+    <script src="/js/comment.js" defer></script>
+    <script src="/js/background.js" defer></script>
+    <script src="/js/weather.js" defer></script>
+    <title>NomadWorld</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="count">
-            <div class="today">TODAY<span class="today__count">1</span></div>
-            <div class="total">TOTAl<span class="total__count">20230501</span></div>
-        </div>
-        <div class="headline">여기는 헤더입니다</div>
-    </header>
-    <main class="main">
-        <div class="profile">
-            <div class="weather">Today is..</div>
-            <div class="profile_image"><img src="/src/profile.png" alt="프로필"></div>
-            <div class="memo"><b>coding</b>이 ㄴrㄹr 에서 허락한 유일한 ㅁㅏ약 이니까...★</div>
-            <div class="user_name">뉴진스</div>
-            <form action="#">
-                <label for="friends">
-                    <select class="select" name="friends" id="friends">
-                        <option value="select">일촌 파도타기</option>
-                        <option value="friends_01">nico</option>
-                        <option value="friends_02">차은우</option>
-                        <option value="friends_03">서강준</option>
-                        <option value="friends_04">박보검</option>
-                    </select>
-                </label>
-            </form>
-        </div>
-        <div class="content">
-            <div class="info">
-                <div class="location">location</div>
-                <div class="clock">clock</div>
+    <div class="outer">
+        <header class="header">
+            <div class="count">
+                <div class="today">TODAY<span class="today__count">1</span></div>
+                <div class="total">TOTAl<span class="total__count">20230501</span></div>
             </div>
-            <figure>
-                <figcaption>mini room</figcaption>
-                <img src="/src/miniroom01.png" alt="미니룸">
-            </figure>
-            <div class="comment"><span class="comment_title">일촌평</span>
+            <div class="headline"></div>
+        </header>
+        <main class="main">
+            <div class="profile">
+                <div class="weather">Today is..<span class="today_weather"></span></div>
+                <div class="profile_image"><img src="/src/profile.png" alt="프로필"></div>
+                <div class="memo"><b>coding</b>이 ㄴrㄹr 에서 허락한 유일한 ㅁㅏ약 이니까...★</div>
+                <div class="user_name"></div>
                 <form action="#">
-                    <input class="text" type="text" placeholder="일촌과 나누고 싶은 이야기를 남겨보세요~!">
-                    <input class="name" type="text" placeholder="이름">
-                    <button type="button">확인</button>
+                    <label for="friends">
+                        <select class="select" name="friends" id="friends">
+                            <option value="select">일촌 파도타기</option>
+                            <option value="friends_01">nico</option>
+                            <option value="friends_02">차은우</option>
+                            <option value="friends_03">서강준</option>
+                            <option value="friends_04">박보검</option>
+                        </select>
+                    </label>
                 </form>
             </div>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/">홈</a></li>
-                <li><a href="/">사진첩</a></li>
-                <li><a href="/">다이어리</a></li>
-                <li><a href="/">방명록</a></li>
-            </ul>
-        </nav>
-    </main>
-    <aside>
-        <div class="playlist">
-            <i class="fa-solid fa-mp3-player"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-stop"></i>
-            <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-solid fa-forward-step"></i>
-            <i class="fa-solid fa-volume-high"></i>
-        </div>
-    </aside>
+            <div class="content">
+                <div class="info">
+                    <div class="city">
+                        <span>location</span>
+                        <div class="location"></div>
+
+                    </div>
+                    <div class="time">
+                        <span>현재시간</span>
+                        <div class="clock"></div>
+
+                    </div>
+                </div>
+                <figure>
+                    <figcaption>mini room</figcaption>
+                    <img src="/src/miniroom01.png" alt="미니룸">
+                </figure>
+                <div class="comment">
+                    <span class="comment_title">일촌평</span>
+                    <form action="#">
+                        <input class="text" type="text" placeholder="일촌과 나누고 싶은 이야기를 남겨보세요~!" required>
+                        <input class="name" type="text" placeholder="이름" required>
+                        <button type="button">확인</button>
+                    </form>
+                    <ul class="commentList">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="home"><a href="#">홈</a></li>
+                    <li class="gallery"><a href="#">사진첩</a></li>
+                    <li class="diary"><a href="#">다이어리</a></li>
+                    <li class="guest"><a href="#">방명록</a></li>
+                </ul>
+            </nav>
+        </main>
+    </div>
 </body>
 
 </html>
