@@ -1,7 +1,6 @@
 const login = document.querySelector(".login_form")
 const loginBack = document.querySelector(".login_back")
 const loginId = login.querySelector("#login_id")
-const loginBtn = login.querySelector("button")
 const userName = document.querySelector(".user_name")
 const header = document.querySelector('.headline') 
 const NAME_KEY = "name";
@@ -26,7 +25,7 @@ const savedName = localStorage.getItem(NAME_KEY);
 if(savedName === null) {
     login.classList.remove(HIDDEN_CLASS)
     loginBack.classList.remove(HIDDEN_CLASS)
-    loginBtn.addEventListener("click", loginHandler )
+    login.addEventListener("submit", loginHandler )
 } else {
     paintHandler(savedName)
 }

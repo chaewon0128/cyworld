@@ -236,22 +236,22 @@ figure img {
     padding-left: 200px;
 }
 
-.comment .text {
+.comment .comment_text {
     width: 60%;
     padding: 2px 5px;
 }
 
-.comment .name {
+.comment .comment_name {
     width: 20%;
     padding: 2px 5px;
 }
 
-.comment .commentList {
+.comment .comment_list {
     height: 20px;
     list-style: none;
 }
 
-.commentList button {
+.comment_list button {
     border: none;
     background-color: transparent;
     cursor: pointer;
