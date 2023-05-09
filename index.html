@@ -14,12 +14,20 @@
 <body>
     <div class="outer">
         <header class="header">
+            <h1 hidden>노마드월드</h1>
             <div class="count">
                 <div class="today">TODAY<span class="today__count">1</span></div>
                 <div class="total">TOTAl<span class="total__count">20230501</span></div>
             </div>
             <div class="headline"></div>
         </header>
+        <div class="login_back hidden">
+            <form action="#" class="login_form hidden">
+                <label for="login_id">Nomadworld</label>
+                <input type="text" id="login_id" placeholder="이름" required maxlength="15">
+                <button type="submit">로그인</button>
+            </form>
+        </div>
         <main class="main">
             <div class="profile">
                 <div class="weather">Today is..<span class="today_weather"></span></div>

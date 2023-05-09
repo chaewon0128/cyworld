@@ -7,6 +7,10 @@ input {
     outline: none;
 }
 
+.hidden {
+    display: none;
+}
+
 .header,
 .count,
 .main {
@@ -70,6 +74,63 @@ input {
     height: 600px;
     margin-top: 5px;
 }
+
+/* 로그인 영역 */
+.login_back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-image: url(./src/miniroom02.png);
+}
+
+.login_form {
+    top: 50%;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login_form label {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.login_form input,
+.login_form button {
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 350px;
+    margin-left: 70px;
+    height: 40px;
+}
+
+.login_form input {
+    background-color: inherit;
+    padding-left: 20px;
+    color: darkgray;
+    border: 1px solid darkgray;
+}
+
+.login_form button {
+    background-color: #6e879d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* 프로필 영역 */
 .profile {
@@ -200,7 +261,7 @@ figure img {
 .nav ul {
     position: relative;
     left: -1px;
-    z-index: 9999;
+    z-index: 99;
     padding: 0;
 }
 
