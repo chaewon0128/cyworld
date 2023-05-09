@@ -1,6 +1,7 @@
 body {
     background-image: url(src/bg_01.jpg);
     padding: 50px 300px 0 40px;
+    max-width: 100%;
 }
 
 input {
@@ -24,6 +25,7 @@ input {
     background-color: #58b2d0;
     border-radius: 10px;
     border: 1px solid darkblue;
+    padding-right: 20px;
 }
 
 .profile,
@@ -258,24 +260,27 @@ figure img {
 }
 
 /* 네비게이션 영역 */
+
 .nav ul {
     position: relative;
-    left: -1px;
-    z-index: 99;
     padding: 0;
+    top: -600px;
+    left: 1193px
 }
 
 .nav li {
     list-style: none;
     background-color: #58b2d0;
-    border: 1px solid darkcyan;
+    border: 1.5px solid darkblue;
+    border-left: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-bottom: 5px;
     width: 58px;
     padding: 5px;
-    line-height: 25px;
+    line-height: 30px;
     text-align: center;
+    height: 30px;
 }
 
 .nav a {
